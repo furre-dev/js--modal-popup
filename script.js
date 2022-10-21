@@ -25,3 +25,10 @@ fatihTerimBtn.addEventListener("click", function () {
 close.addEventListener("click", function () {
     modalWrapper.classList.add("hidden");
 })
+
+//Gör så att man kan klicka utanför för att kunna stänga. Kopierade rakt av så jag förstår inte koden.
+window.onclick = function(e) {
+    if(e.target == modalWrapper) {
+        modalWrapper.classList.add("hidden");
+    }
+}
